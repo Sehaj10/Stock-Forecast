@@ -14,7 +14,7 @@ selected_stock  = st.text_input('Enter Stock Ticker')
 n_years = st.slider('Years of prediction:', 1, 5)
 period = n_years * 365
 
-@st.cache_data
+#@st.cache_data
 def load_data(ticker):
     try:
         for ticker in selected_stock:
