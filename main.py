@@ -25,7 +25,7 @@ selected = option_menu(
             orientation="horizontal",
             styles={
                 "nav-link": {
-                    "font-size": "16px",
+                    "font-size": "20px",
                     "font-weight": "bold",
                     "text-align": "Center",
                 },
