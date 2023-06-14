@@ -1,5 +1,5 @@
 streamlit
 pandas
-yfinance
+yfinance==0.1.63
 prophet
 plotly
