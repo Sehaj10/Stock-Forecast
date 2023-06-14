@@ -23,6 +23,7 @@ def load_data(ticker):
         data = yf.download(ticker, START, TODAY)
         data.reset_index(inplace=True)
         return data
+        continue
 
         
 
