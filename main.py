@@ -80,7 +80,7 @@ if selected == "Forecast Data":
         forecast = m.predict(future)
 
         # Show and plot forecast
-        st.subheader('Forecast data')
+        st.write('Forecast data')
         st.write(forecast.tail())
 
         st.write(f'Forecast plot for {n_years} years')
