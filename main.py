@@ -16,17 +16,14 @@ period = n_years * 365
 
 #@st.cache_data
 def load_data(ticker):
-    try:
-        for ticker in selected_stock:
-            company = yf.Ticker(selected_stock).info
-            company_name = company['longName']
-            st.subheader(company_name)
-            data = yf.download(ticker, START, TODAY)
-            data.reset_index(inplace=True)
-            return data
-    except:
-        st.write('The entered ticker is INVALID')
-        return None
+    for ticker in selected_stock:
+        company = yf.Ticker(selected_stock).info
+        company_name = company['longName']
+        st.subheader(company_name)
+        data = yf.download(ticker, START, TODAY)
+        data.reset_index(inplace=True)
+        return data
+
         
 
 
