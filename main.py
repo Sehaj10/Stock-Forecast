@@ -9,8 +9,8 @@ from streamlit_option_menu import option_menu
 
 START = "2010-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
-
-st.title('Stock Forecast')
+st.markdown("<h1 style='text-align: center;'>Stock Forecast</h1>", unsafe_allow_html=True)
+#st.title('Stock Forecast')
 selected_stock  = st.text_input('Enter Stock Ticker')
 
 n_years = st.slider('Years of prediction:', 1, 5)
