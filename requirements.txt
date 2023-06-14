@@ -3,3 +3,4 @@ pandas
 yfinance
 prophet
 plotly
+streamlit_option_menu
